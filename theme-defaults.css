@@ -390,6 +390,24 @@
   --notification-radius: var(--radius-notification);
   --notification-shadow: var(--shadow-notification);
 
+  /* Status - readiness/outcome states, not workflow lifecycle labels.
+     The strong token is suited to marks and indicators; soft, text, and
+     border variants keep status cards readable without local color math. */
+  --status-ready: var(--color-emerald-500);
+  --status-ready-soft: color-mix(in srgb, var(--status-ready) 10%, transparent);
+  --status-ready-text: var(--color-emerald-600);
+  --status-ready-border: color-mix(in srgb, var(--status-ready) 20%, transparent);
+
+  --status-attention: #e26d3a;
+  --status-attention-soft: color-mix(in srgb, var(--status-attention) 10%, transparent);
+  --status-attention-text: color-mix(in srgb, var(--status-attention) 78%, black);
+  --status-attention-border: color-mix(in srgb, var(--status-attention) 20%, transparent);
+
+  --status-blocked: var(--color-red-500);
+  --status-blocked-soft: color-mix(in srgb, var(--status-blocked) 10%, transparent);
+  --status-blocked-text: var(--color-red-600);
+  --status-blocked-border: color-mix(in srgb, var(--status-blocked) 20%, transparent);
+
   /* Meter - Progress bars */
   --meter-track-bg: var(--color-gray-200);
   --meter-indicator-bg: var(--control-accent);
@@ -558,6 +576,25 @@
   --button-height-md: --spacing(10); /* 40px */
   --button-height-lg: --spacing(11); /* 44px */
   --toggle-size: var(--control-toggle-size);
+}
+
+/* Status colors need their own contrast tuning because consumers may use the
+   framework family directly before an app supplies a complete dark theme. */
+[data-theme='dark'] {
+  --status-ready: var(--color-emerald-400);
+  --status-ready-soft: color-mix(in srgb, var(--status-ready) 15%, transparent);
+  --status-ready-text: var(--color-emerald-400);
+  --status-ready-border: color-mix(in srgb, var(--status-ready) 30%, transparent);
+
+  --status-attention: #f2934a;
+  --status-attention-soft: color-mix(in srgb, var(--status-attention) 15%, transparent);
+  --status-attention-text: var(--status-attention);
+  --status-attention-border: color-mix(in srgb, var(--status-attention) 30%, transparent);
+
+  --status-blocked: var(--color-red-400);
+  --status-blocked-soft: color-mix(in srgb, var(--status-blocked) 15%, transparent);
+  --status-blocked-text: var(--color-red-400);
+  --status-blocked-border: color-mix(in srgb, var(--status-blocked) 30%, transparent);
 }
 
 @layer theme {

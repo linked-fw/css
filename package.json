@@ -11,7 +11,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "echo \"@_linked/css is a pure CSS package; no build step needed.\""
+    "build": "echo \"@_linked/css is a pure CSS package; no build step needed.\"",
+    "test": "node --test"
   },
   "peerDependencies": {
     "tailwindcss": "^4"

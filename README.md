@@ -96,6 +96,24 @@ Components fall through layers:
 
 Apps can override at any layer. The state-first layer keeps Linked variable naming aligned with Tailwind's utility conventions; the component-first layer gives component authors precise control points.
 
+### Semantic status family
+
+Readiness and outcome UI share three framework statuses: `ready`, `attention`, and `blocked`. Each status provides a strong color plus `-soft`, `-text`, and `-border` variants:
+
+```css
+.statusCard {
+  color: var(--status-attention-text);
+  background: var(--status-attention-soft);
+  border: 1px solid var(--status-attention-border);
+}
+
+.statusMark {
+  background: var(--status-attention);
+}
+```
+
+The defaults include light and `[data-theme='dark']` values. Apps may override the canonical tokens in their theme; package components should consume these names instead of defining local success/warning/danger palettes. These tokens describe whether something is ready, needs attention, or is blocked. Keep lifecycle labels such as draft or in progress in app-owned aliases when they do not carry one of those meanings.
+
 ### Known gap
 
 `utilities.css`'s `@utility` mixins reference state-first tokens (`--bg-card`, `--bg-modal`, `--spacing-card`, etc.) that are **not** defined in `theme-defaults.css`. The consuming app must define them. Both CN's `src/scss/theme.css` and the `@_linked/cli` app template do this. If you import `utilities.css` without app-defined state tokens, the `@utility` mixins resolve to empty values silently. See follow-up ideation: [docs/ideas/014-promote-cn-css-tokens-to-linked-css.md](https://github.com/create-now/docs) (in the `create_now` workspace).
