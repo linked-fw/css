@@ -1,5 +1,13 @@
 # @\_linked/css
 
+## 0.3.1
+
+### Patch Changes
+
+- [#24](https://github.com/linked-fw/css/pull/24) [`db554c5`](https://github.com/linked-fw/css/commit/db554c59d3978126d1c98af18faf00154bf64a57) Thanks [@flyon](https://github.com/flyon)! - Declare `linkedPackage: true` in the manifest, so the package is discoverable by the Linked
+  tooling that keys on that flag (`getLincdPackages`, and the dependency pass of the Vite
+  `discoverWorkspaces`). No CSS, no export and no file list changes.
+
 ## 0.3.0
 
 ### Minor Changes
