@@ -3,6 +3,7 @@
   "version": "0.3.0",
   "description": "CSS variables, utilities, and theme defaults for the Linked framework",
   "license": "MIT",
+  "linkedPackage": true,
   "files": [
     "*.css"
   ],
