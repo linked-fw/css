@@ -5,7 +5,9 @@
   "license": "MIT",
   "linkedPackage": true,
   "files": [
-    "*.css"
+    "*.css",
+    "LICENSE",
+    "NOTICE"
   ],
   "packageManager": "npm@12.2.0",
   "publishConfig": {
