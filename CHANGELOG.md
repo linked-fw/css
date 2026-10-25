@@ -1,5 +1,11 @@
 # @\_linked/css
 
+## 0.3.2
+
+### Patch Changes
+
+- [#36](https://github.com/linked-fw/css/pull/36) [`ac00c1b`](https://github.com/linked-fw/css/commit/ac00c1b4ebcbc4375b9096cab2902a2848773556) Thanks [@flyon](https://github.com/flyon)! - License: MIT (data under its original license)
+
 ## 0.3.1
 
 ### Patch Changes
