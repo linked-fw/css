@@ -9,7 +9,7 @@
     "LICENSE",
     "NOTICE"
   ],
-  "packageManager": "npm@12.2.0",
+  "packageManager": "npm@12.2.1",
   "publishConfig": {
     "access": "public"
   },
