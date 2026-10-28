@@ -1,5 +1,11 @@
 # @\_linked/css
 
+## 0.3.3
+
+### Patch Changes
+
+- [#39](https://github.com/linked-fw/css/pull/39) [`86d23f2`](https://github.com/linked-fw/css/commit/86d23f2a408c8382fe59d6979dbf0ef4bd0b9db8) Thanks [@flyon](https://github.com/flyon)! - `package.json` says what this package is in `"linked": {"kind": "library"}` instead of `"linkedPackage": true`, which the CLI and server no longer read.
+
 ## 0.3.2
 
 ### Patch Changes
