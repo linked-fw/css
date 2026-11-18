@@ -11,7 +11,7 @@
     "LICENSE",
     "NOTICE"
   ],
-  "packageManager": "npm@12.2.0",
+  "packageManager": "npm@12.2.3",
   "publishConfig": {
     "access": "public"
   },
